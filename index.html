@@ -7,9 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- CSS styles -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-            <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
         <title class="head">Birth-Day Calender</title>
     </head>
 
@@ -17,19 +16,18 @@
         <h1 class="head">Naming Calender</h1>
         <div class="container">
             <div class="jumbotron">
-                <p class="text">This is a web application that takes a user's birthday and calculates the day of the
-                    week they were born and then depending on their gender outputs their Akan Name. Akan names are
-                    derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day
-                    name' which corresponds to the day in the week they were born.</p>
+                <p class="text">This is a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</p>
+            </div>
+            <div class="header">
+                <header class="details">Enter correct details here!.</header>
+                <!--div responsible for displaying error message -->
+            </div>
+
+            <form>
+                <div class="form-row">
+                    <!--allows for creation of an inline form-->
                 </div>
-                <div class="header">
-                    <header class="details">Enter correct details here!.</header>
-                    <!--div responsible for displaying error message -->
-                </div>
-                <form>
-                    <div id="myBirthDate" class="form-row">
-                        <!--allows for creation of an inline form-->
-                    </div>
+                <div id="myBirthDate">
                     <div class="form-month">
                         <label for="mm"><b>Month</b></label>
                         <!--label for month input box -->
@@ -50,41 +48,48 @@
                             <option value=11>November</option>
                             <option value=12>December</option>
                         </select>
-                    </div><br></br>
+                    </div>
+                    <br></br>
                     <div class="form-date">
                         <label for="dd"><b>Date</b></label>
                         <!--label for date input box-->
                         <input type="number" class="form-control" id="dd" placeholder="1" min="1" max="31" required>
-                    </div> <br></br>
+                    </div>
+                    <br></br>
                     <div class="form year">
                         <label for="yyy"><b>Year</b></label>
                         <!--label for year input box-->
                         <input type="number" class="form-control" id="yy" placeholder="2020" min="1" max="2020" required>
-                    </div><br></br>
-                </div>
-            <div class="form-gender">
-                <label class="label">What's your gender?</label>
-                <!--label for gender radios -->
-                <div class="rdio rdio-default">
-                    <input type="radio" name="gender" id="male" value="Male">
-                    <label for="male">&nbsp;&nbsp;<b>Male</b></label>
-                </div>
-                <div class="rdio rdio-default">
-                    <input type="radio" name="gender" id="female" value="Female">
-                    <label for="female">&nbsp;&nbsp;<b>Female</b></label>
-                </div>
-            </div>
+                    </div>
                     <br></br>
-                    <button type="submit" onclick="getAkanName(); return false;"  class="btn btn-primary btn-xs"></i>&nbsp;&nbsp;Get Akan Name</button>
-                    <button type="reset" onclick="clearAkanMessage(); return false;" class="btn btn-default btn-xs"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;&nbsp;Cancel</button>
-                </form>
-                    <div class="your-akan-name"></div>
-                    <p id="message" class="output"></p>
-                    <footer>Akan Names Application @2020</footer>
-                    <script src="js/jquery-3.4.1.js"></script>
-                    <script src="js/bootstrap.min.js"></script>
-                    <script src="js/scripts.js"></script>
+                </div>
         </div>
+        <div class="form-gender">
+            <label class="label">What's your gender?</label>
+            <!--label for gender radios -->
+            <div class="rdio rdio-default">
+                <input type="radio" name="gender" id="male" value="Male">
+                <label for="male">&nbsp;&nbsp;<b>Male</b></label>
+            </div>
+            <div class="rdio rdio-default">
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">&nbsp;&nbsp;<b>Female</b></label>
+            </div>
+        </div>
+        <br></br>
+        <button type="submit" onclick="getAkanName(); return false;" class="btn btn-primary btn-xs">
+            </i>&nbsp;&nbsp;Get Akan Name</button>
+        <button type="reset" onclick="clearAkanMessage(); return false;" class="btn btn-default btn-xs"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;&nbsp;Cancel</button>
+        </form>
+
+        <div class="your-akan-name"></div>
+        <p id="message" class="output"></p>
+        <footer>Akan Names Application @2020</footer>
+        <script src="js/jquery-3.4.1.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        </div>
+        
     </body>
 
     </html>

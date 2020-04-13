@@ -6,16 +6,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
+        <!-- CSS styles -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
             integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+            <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">    
         <title class="head">Birth-Day Calender</title>
-        <h1>Naming Calender</h1>
-        <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     </head>
 
     <body>
+        <h1>Naming Calender</h1>
         <div class="container">
             <div class="jumbotron">
                 <p class="text">This is a web application that takes a user's birthday and calculates the day of the
@@ -27,15 +26,10 @@
                     <!--div responsible for displaying error message -->
                 </div>
                 <form>
-                    <div class="form-row">
+                    <div id="myBirthDate" class="form-row">
                         <!--allows for creation of an inline form-->
                     </div>
-                    <div class="form date">
-                        <label for="dd"><b>Date</b></label>
-                        <!--label for date input box-->
-                        <input type="number" class="form-control" id="dd" placeholder="1" min="1" max="31" required>
-                    </div> <br></br>
-                    <div class="form month">
+                    <div class="form-month">
                         <label for="mm"><b>Month</b></label>
                         <!--label for month input box -->
                         <select class="form-control" id="mm">
@@ -56,8 +50,13 @@
                             <option value=12>December</option>
                         </select>
                     </div><br></br>
+                    <div class="form-date">
+                        <label for="dd"><b>Date</b></label>
+                        <!--label for date input box-->
+                        <input type="number" class="form-control" id="dd" placeholder="1" min="1" max="31" required>
+                    </div> <br></br>
                     <div class="form year">
-                        <label for="yy"><b>Year</b></label>
+                        <label for="yyy"><b>Year</b></label>
                         <!--label for year input box-->
                         <input type="number" class="form-control" id="yy" placeholder="2020" min="1" max="2020" required>
                     </div><br></br>

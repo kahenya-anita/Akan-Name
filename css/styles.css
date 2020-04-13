@@ -7,3 +7,24 @@
     background-color: rgb(255, 240, 249);
     
 }
+
+.head {
+    float: centre;
+    font-weight: 900;
+    font-weight: bolder;
+    font-style: oblique;
+    color: rgb(15, 14, 14);
+    font-stretch: initial;
+    text-align: center;
+    
+}
+
+.details {
+    color: blue;
+    font-weight: bolder;
+    text-align: center;
+}
+
+footer {
+    
+}

@@ -26,5 +26,9 @@
 }
 
 footer {
-    
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+    font-stretch: semi-expanded;
+
 }

@@ -25,6 +25,10 @@
     text-align: center;
 }
 
+.label {
+    font-weight: bolder;
+}
+
 footer {
     text-align: center;
     font-weight: lighter;

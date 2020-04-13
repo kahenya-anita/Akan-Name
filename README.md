@@ -30,10 +30,6 @@ A web application that takes a user's birthday and calculates the day of the wee
 * CSS
 * JQUERY
 
-##### Requirements
-
-JSFiddle or JavaScript Console
-
 ## Behaviour Driven Development
 
 1. Displays Form For Entering Date and Gender

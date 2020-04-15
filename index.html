@@ -31,7 +31,7 @@
                     <div class="form-month">
                         <label for="mm"><b>Month</b></label>
                         <!--label for month input box -->
-                        <select class="form-control" id="mm">
+                        <select class="form-control" id="month">
                             <!--creates a list of options to be selected from -->
                             <option>------</option>
                             <!--placeholder for month input box -->
@@ -53,13 +53,13 @@
                     <div class="form-date">
                         <label for="dd"><b>Date</b></label>
                         <!--label for date input box-->
-                        <input type="number" class="form-control" id="dd" placeholder="1" min="1" max="31" required>
+                        <input type="number" class="form-control" id="date" placeholder="1" min="1" max="31" required>
                     </div>
                     <br></br>
                     <div class="form year">
                         <label for="yyy"><b>Year</b></label>
                         <!--label for year input box-->
-                        <input type="number" class="form-control" id="yy" placeholder="2020" min="1" max="2020" required>
+                        <input type="number" class="form-control" id="year" placeholder="2020" min="1" max="2020" required>
                     </div>
                     <br></br>
                 </div>
@@ -80,7 +80,7 @@
         <button type="submit" onclick="getAkanName(); return false;" class="btn btn-primary btn-xs">
             </i>&nbsp;&nbsp;Get Akan Name</button>
         <button type="reset" onclick="clearAkanMessage(); return false;" class="btn btn-default btn-xs"><i class="fa fa-times" aria-hidden="true"></i>&nbsp;&nbsp;Cancel</button>
-        </form>
+            </form>
 
         <div class="your-akan-name"></div>
         <p id="message" class="output"></p>

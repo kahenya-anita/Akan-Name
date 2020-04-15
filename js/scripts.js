@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#myBirthDate").addEventListener;
+    $("#myBirthDate").submit;
 });
 
 
@@ -7,8 +7,11 @@ function getAkanName(){
     var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     var maleAkanNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
     var femaleAkanNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"]
-    var myBirthday = document.getElementById("myBirthDate").value;
-    var myGender = document.getElementsById("male", "female");
+    var  month = document.getElementById("month");
+    var date = document.getElementById("date");
+    var year = document.getElementById("year");
+    var myGender = document.getElementsById("male");
+    var myGender = document.getElementById("female");
     var dateOfBirth = new Date(myBirthday);
     var dayOfTheWeek = dateOfBirth.getDay();
     if(myBirthday === ""){
